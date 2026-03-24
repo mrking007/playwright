@@ -17,7 +17,7 @@ import pytest
 @pytest.fixture(scope="session")
 def BrowserLogin():
         with sync_playwright() as p:
-            browser = p.firefox.launch(headless=False)
+            browser = p.chromium.launch(headless=False)
             context = browser.new_context()
             BrowserLogin = context.new_page()
             yield BrowserLogin

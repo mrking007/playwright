@@ -29,5 +29,5 @@ def test_CreateAccount(BrowserLogin):
     BrowserLogin.locator('#AccountFrm_agree').click()
     BrowserLogin.get_by_role("button", name="Continue").click()
     BrowserLogin.goto("https://automationteststore.com/index.php?rt=account/success")
-    BrowserLogin.get_by_role('nav a[href="https://automationteststore.com/index.php?rt=account/account"]').click()
-    time.sleep(5)
+    # BrowserLogin.get_by_role('nav a[href="https://automationteststore.com/index.php?rt=account/account"]').click()
+    # time.sleep(5)
