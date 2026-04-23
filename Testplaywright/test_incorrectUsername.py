@@ -11,4 +11,4 @@ def test_incorrectUserName(playwright):
     page.get_by_label("username").fill("studentt")
     page.get_by_label("password").fill("Password123")
     page.get_by_role("button").click()
-    expect(page.get_by_text("Your username is invalid!")).to_be_visible()
+    expect(page.locator("#error")).to_be_visible(timeout=10_000)

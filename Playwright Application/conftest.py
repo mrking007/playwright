@@ -22,3 +22,12 @@ def BrowserLogin():
             BrowserLogin = context.new_page()
             yield BrowserLogin
             browser.close()
+
+@pytest.fixture(scope="session")
+def rahulShettyCode():
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=False)
+            context = browser.new_context()
+            BrowserLogin = context.new_page()
+            yield BrowserLogin
+            browser.close()
