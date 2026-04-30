@@ -27,3 +27,17 @@ print(add(2, 3))  # Output: 5
 s1 ="mathankumar"
 s2=lambda func:func.upper()
 print(s2(s1))
+
+# Add Logic as Even (a%2==0)
+a=int(input("Enter a number"))
+if(a%2==0):
+    print("Even")
+else:
+    print("add")
+
+# Add Logic as odd (a%a!=0 or a%2 ==1 )
+a=int(input("Enter a number"))
+if(a%2==1):
+    print("odd")
+else:
+    print("Even")
