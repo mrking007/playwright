@@ -1,0 +1,37 @@
+1.Common Manual Testing Tech:
+
+      Functional testing:
+Accessibility testing,Acceptance testing,blockbox testing,e2d testing, functional testing, regression testing, iterative testing, sanity testing, smoke testing, white box testing
+     Non Functional testing:
+Load testing,non functional testing, performance testing, security testing, single user performance , stress testing
+2. Boundary value analysis:
+used to test values at the edges (boundaries) of an input range Example if dob is accept only for 18 -60 , it should allow between two ages
+Testcase:
+  If age is 18: minimum value system should accept
+  If age is 60 : maximum value system should accpet
+ If age is 17  : bellow minimu system should reject
+ If age is 61  above maximum system should reject
+
+4. Future of manual testing in AI:
+Manual testing in the age of AI is the process where human testers work together with AI-powered tools to ensure software quality by using human intelligence, creativity, and decision-making skills that cannot be fully automated by artificial intelligence.
+
+
+3. Decision Table testing:
+Its used to verify application behaviour depends on multiple conditions and compination of inputs
+Its helps to verify different combination of inputs and complex validation logic
+Example Rules username is correct and password is correct
+Condition:  username is valid? Password is valid?
+| Order > ₹500 | Premium Member | Result        |
+| ------------ | -------------- | ------------- |
+| Yes          | Yes            | Free Delivery |
+| Yes          | No             | Paid Delivery |
+| No           | Yes            | Paid Delivery |
+| No           | No             | Paid Delivery |
+
+
+
+
+
+
+
+
