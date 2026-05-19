@@ -15,7 +15,7 @@ ${submit}    //*[@id="submit"]
 Correct_cred_with_Login
      LoginWIthcorrectcred
 Incorrect_cred_with_login
-    LoginWithincorrectCred
+    LoginWithincorrectusername
 *** Keywords ***
 LoginWIthcorrectcred
     New Browser    chromium     headless=False
@@ -25,7 +25,7 @@ LoginWIthcorrectcred
     browser.Fill Text    ${userName}    student
     browser.Fill Text    ${password}    Password123
     browser.Click    ${submit}
-LoginWithincorrectCred
+LoginWithincorrectusername
         New Browser    chromium     headless=False
     Set Browser Timeout    30s
     browser.New Page    ${url}
