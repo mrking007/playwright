@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.3 on win32)" generated="2026-05-19T18:49:03.028837" rpa="false" schemaversion="5">
+<suite id="s1" name="Pytest" source="C:\Users\kumarmt\pytest">
+<suite id="s1-s1" name="Robot Framework" source="C:\Users\kumarmt\pytest\Robot Framework">
+<suite id="s1-s1-s1" name="Test" source="C:\Users\kumarmt\pytest\Robot Framework\test.robot">
+<test id="s1-s1-s1-t1" name="Incorrect_cred_with_login" line="17">
+<kw name="LoginWithincorrectCred">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-05-19T18:49:03.534121" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\kumarmt\\pytest\\browser\\traces\\916f148c-b888-4d4b-a976-f1bc7d0cb73f"}</msg>
+<msg time="2026-05-19T18:49:03.612222" level="INFO">Starting Browser process C:\Users\kumarmt\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js using port 60073</msg>
+<msg time="2026-05-19T18:49:03.612222" level="INFO">Node startup parameters: ['node', 'C:\\Users\\kumarmt\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js', '60073']</msg>
+<msg time="2026-05-19T18:49:09.401490" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\kumarmt\\pytest\\browser\\traces\\916f148c-b888-4d4b-a976-f1bc7d0cb73f"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-05-19T18:49:03.533120" elapsed="5.868370"/>
+</kw>
+<kw name="Set Browser Timeout" owner="Browser">
+<msg time="2026-05-19T18:49:09.411693" level="INFO">No context open.</msg>
+<arg>30s</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<status status="PASS" start="2026-05-19T18:49:09.401490" elapsed="0.011205"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-05-19T18:49:17.761376" level="INFO">Successfully initialized new page object and opened url: https://practicetestautomation.com/practice-test-login/</msg>
+<msg time="2026-05-19T18:49:17.761376" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-05-19T18:49:09.412695" elapsed="8.348681"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-19T18:49:22.762703" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-19T18:49:17.762373" elapsed="5.000330"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-05-19T18:49:22.764718" level="INFO">Fills the text 'incorrectUser' in the given field.</msg>
+<arg>${userName}</arg>
+<arg>incorrectUser</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-05-19T18:49:22.762703" elapsed="0.100005"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-05-19T18:49:22.867486" level="INFO">Fills the text 'Password123' in the given field.</msg>
+<arg>${password}</arg>
+<arg>Password123</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-05-19T18:49:22.865149" elapsed="0.048694"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-05-19T18:49:22.915859" level="INFO">Clicks the element '//*[@id="submit"]'.</msg>
+<arg>${submit}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-05-19T18:49:22.914869" elapsed="0.129697"/>
+</kw>
+<status status="PASS" start="2026-05-19T18:49:03.531121" elapsed="19.513445"/>
+</kw>
+<msg time="2026-05-19T18:49:23.059604" level="INFO">Switching context to context=bb814a07-04b6-4bb7-895b-e67dba59b442 in CURRENT</msg>
+<msg time="2026-05-19T18:49:23.084793" level="INFO">Successfully changed active context: context=bb814a07-04b6-4bb7-895b-e67dba59b442</msg>
+<msg time="2026-05-19T18:49:23.095448" level="INFO">Switching browser to CURRENT</msg>
+<msg time="2026-05-19T18:49:23.100437" level="INFO">Returned active browser id. CURRENT</msg>
+<msg time="2026-05-19T18:49:23.101797" level="INFO">Switching browser to browser=a57e1f12-4ca2-4270-ac17-8a84f10dd391</msg>
+<msg time="2026-05-19T18:49:23.109369" level="INFO">Successfully changed active browser: browser=a57e1f12-4ca2-4270-ac17-8a84f10dd391</msg>
+<msg time="2026-05-19T18:49:23.109369" level="INFO">Switching context to CURRENT in CURRENT</msg>
+<msg time="2026-05-19T18:49:23.116422" level="INFO">Returned active context id: CURRENT</msg>
+<msg time="2026-05-19T18:49:23.118424" level="INFO">Switching context to context=bb814a07-04b6-4bb7-895b-e67dba59b442 in CURRENT</msg>
+<msg time="2026-05-19T18:49:23.134858" level="INFO">Successfully changed active context: context=bb814a07-04b6-4bb7-895b-e67dba59b442</msg>
+<msg time="2026-05-19T18:49:23.273017" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2026-05-19T18:49:03.530109" elapsed="19.515478"/>
+</test>
+<status status="PASS" start="2026-05-19T18:49:03.108898" elapsed="20.166296"/>
+</suite>
+<status status="PASS" start="2026-05-19T18:49:03.105900" elapsed="20.200621"/>
+</suite>
+<status status="PASS" start="2026-05-19T18:49:03.032835" elapsed="20.278686"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Pytest" id="s1" pass="1" fail="0" skip="0">Pytest</stat>
+<stat name="Robot Framework" id="s1-s1" pass="1" fail="0" skip="0">Pytest.Robot Framework</stat>
+<stat name="Test" id="s1-s1-s1" pass="1" fail="0" skip="0">Pytest.Robot Framework.Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
